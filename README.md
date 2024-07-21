@@ -11,4 +11,3 @@ Your contribution to this project is to add your name to the list.
 Begin the line with an asterisk (`*`), followed by a space. Then, include your name.
 
 # Project Contributors
-* Kattni
