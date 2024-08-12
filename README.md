@@ -8,6 +8,7 @@ Below is a list of names under the _Project Contributors_ heading. Each is the n
 ## Instructions
 Your contribution to this project is to add your name to the list. 
 
-Begin the line with an asterisk (`*`), followed by a space. Then, include your name.
+Begin the line with an asterisk (`*`), followed by a space. Then, include your name, as you'd like to be identified.
 
 # Project Contributors
+* Kattni
