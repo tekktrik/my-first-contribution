@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2024 Alec Delaney
+# SPDX-License-Identifier: MIT
+
+name: Check PR submissions
+
+# Only activates for pull requests so maintainers can directly push updates not
+# abiding to the PR submission rulesff
+on:
+  pull_request
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+      - name: Install Python 3.X
+        uses: actions/setup-python@v5
+      - name: Install CI test dependencies
+        run: |
+          pip install -r .github/requirements-test.txt
+      - name: Create git-diff
+        run: |
+          git fetch
+          git diff origin/main HEAD --word-diff >> changes.diff
+      - name: Analyze git-diff
+        run: |
+          pytest .github/test_diff.py
