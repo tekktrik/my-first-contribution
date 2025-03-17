@@ -12,3 +12,4 @@ Begin the line with an asterisk (`*`), followed by a space. Then, include your n
 
 # Project Contributors
 * Kattni
+* Alec
