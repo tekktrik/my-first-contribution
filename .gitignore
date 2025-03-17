@@ -1,1 +1,8 @@
+# Python virtual environment files
 .venv/
+
+# Compiled Python bytecode
+__pycache__
+
+# CI-generated git-diff
+changes.diff
